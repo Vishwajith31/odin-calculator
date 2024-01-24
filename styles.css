@@ -1,0 +1,120 @@
+html {
+  text-align: center;
+}
+body {
+  display: block;
+  background-color: #bfcfe7;
+  margin: 8px;
+}
+#calc {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+#calculator {
+  margin: 5px;
+  background-color: black;
+  height: 540px;
+  width: 400px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(4, 80px);
+  padding: 10px;
+}
+#display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  grid-column: 1 / -1;
+  color: white;
+  font-size: 4em;
+  font-weight: lighter;
+  padding: 10px;
+  padding-right: 25px;
+  margin: 5px;
+}
+
+button.operator {
+  background-color: #ff9800;
+}
+button.clear {
+  background-color: #b6bbc4;
+  color: black;
+}
+button.sign {
+  background-color: #b6bbc4;
+  color: black;
+}
+button.percent {
+  background-color: #b6bbc4;
+  color: black;
+}
+#zero {
+  grid-column: span 2;
+  border-radius: 105px;
+  width: 166px;
+}
+button {
+  background-color: #3d3b40;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 70px;
+  width: 70px;
+  justify-self: center;
+  box-shadow: 0 2px 4px darkslategray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+.operator:hover {
+  background-color: hsl(35, 100%, 65%);
+}
+.operator:active {
+  background-color: hsl(35, 100%, 75%);
+}
+
+.clear:hover,
+.sign:hover,
+.percent:hover {
+  background-color: hsl(0, 10%, 85%);
+}
+.clear:active,
+.sign:active,
+.percent:active {
+  background-color: hsl(0, 29%, 91%);
+}
+
+footer {
+  color: aliceblue;
+  text-align: center;
+  background-color: #272829;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.github-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#gh-logo {
+  width: 35px;
+  height: 35px;
+  margin-bottom: -9px;
+  border-radius: 50%;
+}
